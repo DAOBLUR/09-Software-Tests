@@ -1,0 +1,13 @@
+id, firstName, lastName, clubId, nationality, expected
+1, Florian, Fuchs, 1, AUT, Already exist
+2, Patrik, Baboumian, 2, GER, Already exist
+3, Marco, Hietala, 3, FIN, Already exist
+4, Marcel, Hirscher, 2, AUT, Already exist
+5, Harry, Hirscher, 2, AUT, Already exist
+6, Matthijs, Hirscher, 3, AUT, Already exist
+7, Manuel, Hirscher, 2, AUT, Success
+8, Julian, Hirscher, 1, AUT, Success
+9, Not found, Hirscher, 4, AUT, Failed
+10, Not found, Hirscher, 4, AUT, Already exist
+11, Not found, Hirscher, 4, AUT, Failed
+12, Not found, Hirscher, 4, AUT, Failed
