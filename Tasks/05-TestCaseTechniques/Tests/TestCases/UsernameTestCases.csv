@@ -1,0 +1,16 @@
+username;expected
+user1;true
+user12345;true
+user123456789012345;true
+user1234567890123456;false
+user;false
+;false
+user@name;false
+user name;false
+user_name;false
+user12345678901234567890;false
+validUser;true
+ValidUser123;true
+12345;true
+user!name;false
+user#name;false

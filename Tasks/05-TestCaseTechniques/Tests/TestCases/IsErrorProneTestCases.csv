@@ -1,0 +1,16 @@
+input;expected
+;true
+null;true
+"";true
+" ";false
+"test";false
+"error";false
+"null";false
+"empty";false
+"valid";false
+"invalid";false
+"test case";false
+"example";false
+"sample";false
+"input";false
+"output";false

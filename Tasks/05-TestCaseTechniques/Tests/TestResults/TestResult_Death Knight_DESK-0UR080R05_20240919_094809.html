@@ -1,0 +1,519 @@
+﻿<html xmlns:tp="http://schemas.datacontract.org/2004/07/Microsoft.VisualStudio.TestPlatform.Extensions.HtmlLogger.ObjectModel" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+  <body>
+    <h1>Test run details</h1>
+    <div class="summary">
+      <div class="block"><span>Total tests</span><div class="total-tests">76</div><br></div>
+      <div class="block"><span>Passed  : </span><span class="passedTests">71</span><br><span>Failed  : </span><span class="failedTests">5</span><br><span>Skipped : </span><span class="skippedTests">0</span><br></div>
+      <div class="block"><span>Pass percentage</span><div class="pass-percentage">93 %</div><br></div>
+      <div class="block"><span>Run duration</span><div class="test-run-time">861ms</div><br></div><br></div>
+    <h2>Failed Results</h2><details open=""><summary>E:\UNI\semester-9\Software Tests\Tasks\05-TestCaseTechniques\Tests\bin\Debug\net8.0\Tests.dll</summary><div class="inner-row" Id="1106534780-failedResult">
+        <div class="leaf-division">
+          <div><span class="fail">✘</span><span> TestIsValidUsername (user1234567890123456,False)​</span><div class="duration"><span>15ms</span><br></div>
+          </div>
+          <div class="error-info">
+    Error: <span class="error-message"><pre>Assert.AreEqual failed. Expected:&lt;False&gt;. Actual:&lt;True&gt;. </pre></span><br>
+    Stack trace: <span class="error-stack-trace"><pre>   at Tests.EquivalenceClassPartitioningTests.TestIsValidUsername(String username, Boolean expected) in E:\UNI\semester-9\Software Tests\Tasks\05-TestCaseTechniques\Tests\EquivalenceClassPartitioningTests.cs:line 13
+   at InvokeStub_EquivalenceClassPartitioningTests.TestIsValidUsername(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</pre></span><br></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="fail">✘</span><span> TestIsErrorProne (null,True)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info">
+    Error: <span class="error-message"><pre>Assert.AreEqual failed. Expected:&lt;True&gt;. Actual:&lt;False&gt;. </pre></span><br>
+    Stack trace: <span class="error-stack-trace"><pre>   at Tests.ErrorGuessingTests.TestIsErrorProne(String input, Boolean expected) in E:\UNI\semester-9\Software Tests\Tasks\05-TestCaseTechniques\Tests\ErrorGuessingTests.cs:line 13
+   at InvokeStub_ErrorGuessingTests.TestIsErrorProne(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</pre></span><br></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="fail">✘</span><span> TestIsErrorProne ("",True)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info">
+    Error: <span class="error-message"><pre>Assert.AreEqual failed. Expected:&lt;True&gt;. Actual:&lt;False&gt;. </pre></span><br>
+    Stack trace: <span class="error-stack-trace"><pre>   at Tests.ErrorGuessingTests.TestIsErrorProne(String input, Boolean expected) in E:\UNI\semester-9\Software Tests\Tasks\05-TestCaseTechniques\Tests\ErrorGuessingTests.cs:line 13
+   at InvokeStub_ErrorGuessingTests.TestIsErrorProne(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</pre></span><br></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="fail">✘</span><span> TestLogin (3,wrongpass,correctpass,Account Blocked)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info">
+    Error: <span class="error-message"><pre>Assert.AreEqual failed. Expected:&lt;Account Blocked&gt;. Actual:&lt;Incorrect Password&gt;. </pre></span><br>
+    Stack trace: <span class="error-stack-trace"><pre>   at Tests.StateTransitionTests.TestLogin(String id, String password, String correctPassword, String expected) in E:\UNI\semester-9\Software Tests\Tasks\05-TestCaseTechniques\Tests\StateTransitionTests.cs:line 20
+   at InvokeStub_StateTransitionTests.TestLogin(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</pre></span><br></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="fail">✘</span><span> TestLogin (13,wrongpass,correctpass,Account Blocked)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info">
+    Error: <span class="error-message"><pre>Assert.AreEqual failed. Expected:&lt;Account Blocked&gt;. Actual:&lt;Incorrect Password&gt;. </pre></span><br>
+    Stack trace: <span class="error-stack-trace"><pre>   at Tests.StateTransitionTests.TestLogin(String id, String password, String correctPassword, String expected) in E:\UNI\semester-9\Software Tests\Tasks\05-TestCaseTechniques\Tests\StateTransitionTests.cs:line 20
+   at InvokeStub_StateTransitionTests.TestLogin(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</pre></span><br></div>
+        </div>
+      </div></details><h2>All Results</h2><details><summary>E:\UNI\semester-9\Software Tests\Tasks\05-TestCaseTechniques\Tests\bin\Debug\net8.0\Tests.dll</summary><div class="inner-row" Id="1106534780">
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsWithinBoundary (0,1,10,False)​</span><div class="duration"><span>3ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsWithinBoundary (1,1,10,True)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsWithinBoundary (5,1,10,True)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsWithinBoundary (10,1,10,True)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsWithinBoundary (11,1,10,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsWithinBoundary (20,20,30,True)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsWithinBoundary (25,20,30,True)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsWithinBoundary (30,20,30,True)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsWithinBoundary (31,20,30,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsWithinBoundary (-1,1,10,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsWithinBoundary (15,1,10,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsWithinBoundary (19,20,30,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsWithinBoundary (21,20,30,True)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsWithinBoundary (29,20,30,True)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsWithinBoundary (40,20,30,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsLoginSuccessful (False,False,False,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsLoginSuccessful (True,False,False,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsLoginSuccessful (True,True,False,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsLoginSuccessful (False,True,False,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsLoginSuccessful (False,False,True,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsLoginSuccessful (True,False,True,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsLoginSuccessful (False,True,True,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsLoginSuccessful (True,True,True,True)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsLoginSuccessful (True,True,False,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsLoginSuccessful (False,True,True,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsLoginSuccessful (True,False,True,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsLoginSuccessful (False,False,True,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsLoginSuccessful (True,True,True,True)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsLoginSuccessful (False,False,False,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsLoginSuccessful (True,True,True,True)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsValidUsername (user1,True)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsValidUsername (user12345,True)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsValidUsername (user123456789012345,True)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="fail">✘</span><span> TestIsValidUsername (user1234567890123456,False)​</span><div class="duration"><span>15ms</span><br></div>
+          </div>
+          <div class="error-info">
+    Error: <span class="error-message"><pre>Assert.AreEqual failed. Expected:&lt;False&gt;. Actual:&lt;True&gt;. </pre></span><br>
+    Stack trace: <span class="error-stack-trace"><pre>   at Tests.EquivalenceClassPartitioningTests.TestIsValidUsername(String username, Boolean expected) in E:\UNI\semester-9\Software Tests\Tasks\05-TestCaseTechniques\Tests\EquivalenceClassPartitioningTests.cs:line 13
+   at InvokeStub_EquivalenceClassPartitioningTests.TestIsValidUsername(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</pre></span><br></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsValidUsername (user,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsValidUsername (,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsValidUsername (user@name,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsValidUsername (user name,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsValidUsername (user_name,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsValidUsername (user12345678901234567890,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsValidUsername (validUser,True)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsValidUsername (ValidUser123,True)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsValidUsername (12345,True)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsValidUsername (user!name,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsValidUsername (user#name,False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsErrorProne (,True)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="fail">✘</span><span> TestIsErrorProne (null,True)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info">
+    Error: <span class="error-message"><pre>Assert.AreEqual failed. Expected:&lt;True&gt;. Actual:&lt;False&gt;. </pre></span><br>
+    Stack trace: <span class="error-stack-trace"><pre>   at Tests.ErrorGuessingTests.TestIsErrorProne(String input, Boolean expected) in E:\UNI\semester-9\Software Tests\Tasks\05-TestCaseTechniques\Tests\ErrorGuessingTests.cs:line 13
+   at InvokeStub_ErrorGuessingTests.TestIsErrorProne(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</pre></span><br></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="fail">✘</span><span> TestIsErrorProne ("",True)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info">
+    Error: <span class="error-message"><pre>Assert.AreEqual failed. Expected:&lt;True&gt;. Actual:&lt;False&gt;. </pre></span><br>
+    Stack trace: <span class="error-stack-trace"><pre>   at Tests.ErrorGuessingTests.TestIsErrorProne(String input, Boolean expected) in E:\UNI\semester-9\Software Tests\Tasks\05-TestCaseTechniques\Tests\ErrorGuessingTests.cs:line 13
+   at InvokeStub_ErrorGuessingTests.TestIsErrorProne(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</pre></span><br></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsErrorProne (" ",False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsErrorProne ("test",False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsErrorProne ("error",False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsErrorProne ("null",False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsErrorProne ("empty",False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsErrorProne ("valid",False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsErrorProne ("invalid",False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsErrorProne ("test case",False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsErrorProne ("example",False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsErrorProne ("sample",False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsErrorProne ("input",False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestIsErrorProne ("output",False)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestLogin (1,wrongpass,correctpass,Incorrect Password)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestLogin (2,wrongpass,correctpass,Incorrect Password)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="fail">✘</span><span> TestLogin (3,wrongpass,correctpass,Account Blocked)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info">
+    Error: <span class="error-message"><pre>Assert.AreEqual failed. Expected:&lt;Account Blocked&gt;. Actual:&lt;Incorrect Password&gt;. </pre></span><br>
+    Stack trace: <span class="error-stack-trace"><pre>   at Tests.StateTransitionTests.TestLogin(String id, String password, String correctPassword, String expected) in E:\UNI\semester-9\Software Tests\Tasks\05-TestCaseTechniques\Tests\StateTransitionTests.cs:line 20
+   at InvokeStub_StateTransitionTests.TestLogin(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</pre></span><br></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestLogin (4,correctpass,correctpass,Access Accepted)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestLogin (5,wrongpass,correctpass,Incorrect Password)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestLogin (6,correctpass,correctpass,Access Accepted)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestLogin (7,wrongpass,correctpass,Incorrect Password)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestLogin (8,correctpass,correctpass,Access Accepted)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestLogin (9,wrongpass,correctpass,Incorrect Password)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestLogin (10,correctpass,correctpass,Access Accepted)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestLogin (11,wrongpass,correctpass,Incorrect Password)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestLogin (12,wrongpass,correctpass,Incorrect Password)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="fail">✘</span><span> TestLogin (13,wrongpass,correctpass,Account Blocked)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info">
+    Error: <span class="error-message"><pre>Assert.AreEqual failed. Expected:&lt;Account Blocked&gt;. Actual:&lt;Incorrect Password&gt;. </pre></span><br>
+    Stack trace: <span class="error-stack-trace"><pre>   at Tests.StateTransitionTests.TestLogin(String id, String password, String correctPassword, String expected) in E:\UNI\semester-9\Software Tests\Tasks\05-TestCaseTechniques\Tests\StateTransitionTests.cs:line 20
+   at InvokeStub_StateTransitionTests.TestLogin(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</pre></span><br></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestLogin (14,correctpass,correctpass,Access Accepted)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestLogin (15,wrongpass,correctpass,Incorrect Password)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+        <div class="leaf-division">
+          <div><span class="pass">✔</span><span> TestLogin (16,correctpass,correctpass,Access Accepted)​</span><div class="duration"><span>&lt; 1ms</span><br></div>
+          </div>
+          <div class="error-info"></div>
+        </div>
+      </div></details></body>
+  <style>
+        body { font-family: Calibri, Verdana, Arial, sans-serif; background-color: White; color: Black; }
+        h2 {
+        margin-top: 15px;
+        margin-bottom:10px;
+        }
+        pre {
+        white-space: pre-wrap;
+        }
+        .summary {font-family:monospace;
+        display: -webkit-flex; /* Safari */
+        -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+        display: flex;
+        flex-wrap: wrap;
+        }
+        .row {
+        border: 2px solid #ffffff;
+        width:100%;
+        cursor:pointer;
+        background-color:#d7e9fa;
+        }
+        .list-row {
+        border: 2px solid #ffffff;
+        width:100%;
+        cursor:pointer;
+        background-color:#ffffff;
+        }
+        .inner-row{
+        border: 2px solid #ffffff;
+        padding-left:1%;
+        margin-left:1%;
+        background-color:#ffffff;
+        }
+        .block{
+        width : 150px;
+        }
+        .leaf-division{
+        border: 2px solid #ffffff;
+        background-color:#e6eff7;
+        }
+        .pass { color: #0c0; }
+        .fail { color: #c00; }
+        .error-message { color : brown; }
+        .error-stack-trace { color: brown; }
+        .duration {float:right;padding-right:1%;}
+        .total-tests { font-size : 30px}
+        .test-run-time { font-size : 30px}
+        .pass-percentage { font-size : 30px}
+        .error-info{
+        margin-left:16px;
+        }
+      </style>
+</html>

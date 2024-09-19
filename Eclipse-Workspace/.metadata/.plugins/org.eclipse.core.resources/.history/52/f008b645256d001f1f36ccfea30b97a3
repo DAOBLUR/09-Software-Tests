@@ -1,0 +1,36 @@
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+import utest.evidencia1.clases.CircleLinkedList;
+
+class CircleLinkedListTest {
+
+    @Test
+    void testAddElements() {
+        CircleLinkedList<Integer> list = new CircleLinkedList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        assertEquals(3, list.getSize(), "Expected size of list to be 3 after adding three elements");
+    }
+
+    @Test
+    void testRemoveElement() {
+        CircleLinkedList<Integer> list = new CircleLinkedList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.remove(2);
+        assertEquals(2, list.getSize(), "Expected size of list to be 2 after removing one element");
+        assertFalse(list.contains(2), "List should no longer contain the element 2");
+    }
+
+    @Test
+    void testCircularNature() {
+        CircleLinkedList<Integer> list = new CircleLinkedList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        assertEquals(list.getTail().getNext(), list.getHead(), "Tail node should point to the head in a circular linked list");
+    }
+}
