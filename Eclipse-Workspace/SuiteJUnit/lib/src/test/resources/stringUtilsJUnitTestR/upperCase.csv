@@ -1,0 +1,4 @@
+str,wrapWith,expected
+,Locale.ENGLISH,
+"",Locale.ENGLISH,""
+"aBc",Locale.ENGLISH,"ABC"

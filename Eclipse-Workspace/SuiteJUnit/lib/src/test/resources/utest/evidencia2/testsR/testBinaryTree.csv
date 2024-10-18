@@ -1,0 +1,7 @@
+expected,value
+true,10
+true,20
+true,30
+false,1500000000000000000000000
+false;-40
+false;1

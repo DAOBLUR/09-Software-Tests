@@ -1,0 +1,39 @@
+name: Deploy - Production
+
+on:
+  workflow_dispatch:
+
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    outputs:
+      teams: ${{ steps.actorTeams.outputs.teams }}
+    steps:
+      - name: Get Teams from the Actor
+        uses: tspascoal/get-user-teams-membership@v3
+        id: actorTeams
+        with:
+          username: ${{ github.actor }}
+          GITHUB_TOKEN: ${{ secrets.PAT }}
+  main:
+    needs: validation
+    if: github.ref == 'refs/heads/main' && (contains(needs.validation.outputs.teams, 'grp-github-emu-admins') || contains(needs.validation.outputs.teams, 'gh-chapter-devops-users'))
+    uses: empresa-a/github-actions-templates/.github/workflows/tpl-maven-deploy.yml@main
+    with:
+      branch: "main"
+      stage: "prod"
+      java_version: "11"
+      resource-group: "rg-servicecanal-prod"
+      cluster-name: "aksServiceCanal-Prod"
+      namespace: "bff"
+    secrets:
+      PAT: ${{ secrets.PAT }}
+      BACKEND_ARTIFACTS_USERNAME: ${{ secrets.BACKEND_ARTIFACTS_USERNAME }}
+      BACKEND_ARTIFACTS_PASSWORD: ${{ secrets.BACKEND_ARTIFACTS_PASSWORD }}
+      ACR_SERVER: ${{ secrets.LAYER_PROD_ACR_SERVER }}
+      ACR_USERNAME: ${{ secrets.LAYER_PROD_ACR_USERNAME }}
+      ACR_PASSWORD: ${{ secrets.LAYER_PROD_ACR_PASSWORD }}
+      AZURE_CLIENT_ID: ${{ secrets.PROD_AZURE_CLIENT_ID }}
+      AZURE_CLIENT_SECRET: ${{ secrets.PROD_AZURE_CLIENT_SECRET }}
+      AZURE_SUBSCRIPTION_ID: ${{ secrets.PROD_AZURE_SUBSCRIPTION_ID }}
+      AZURE_TENANT_ID: ${{ secrets.PROD_AZURE_TENANT_ID }}

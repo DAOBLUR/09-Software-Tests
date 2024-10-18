@@ -1,0 +1,9 @@
+seq,searchSeq,expected
+,*,-1
+*,,-1
+"","",0
+"",*,-1
+"aabaabaa","a",0
+"aabaabaa","b",2
+"aabaabaa","ab",1
+"aabaabaa","",0

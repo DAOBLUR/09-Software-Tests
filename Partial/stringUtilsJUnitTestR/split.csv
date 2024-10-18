@@ -1,0 +1,6 @@
+str,expected
+,
+"",[]
+"abc def",["abc", "def"]
+"abc  def",["abc", "def"]
+" abc ",["abc"]

@@ -1,0 +1,5 @@
+str,expected
+,
+"",""
+"abc","abc"
+"   ab  c  ","abc"

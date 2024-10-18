@@ -1,0 +1,8 @@
+str,suffix,expected
+,,true
+, "def",false
+"abcdef",,false
+"abcdef", "def",true
+"ABCDEF", "def",false
+"ABCDEF", "cde",false
+"ABCDEF", "",true

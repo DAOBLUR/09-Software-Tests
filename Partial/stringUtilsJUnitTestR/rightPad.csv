@@ -1,0 +1,10 @@
+str,size,padStr,expected
+,-9999999,*,
+"",3,"z","zzz"
+"bat",3,"yz","bat"
+"bat",5,"yz","batyz"
+"bat",8,"yz","batyzyzy"
+"bat",1,"yz","bat"
+"bat",-1,"yz","bat"
+"bat",5,,"bat  "
+"bat",5,"","bat  "

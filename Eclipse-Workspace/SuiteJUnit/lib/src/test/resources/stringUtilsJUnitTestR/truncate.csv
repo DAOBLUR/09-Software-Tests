@@ -1,0 +1,9 @@
+str,maxWidth,expected
+,0,
+,2,
+"", 4,""
+"abcdefg", 4,"abcd"
+"abcdefg", 6,"abcdef"
+"abcdefg", 7,"abcdefg"
+"abcdefg", 8,"abcdefg"
+"abcdefg", -1,throws an IllegalArgumentException

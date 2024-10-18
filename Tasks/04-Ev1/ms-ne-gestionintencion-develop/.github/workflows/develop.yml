@@ -1,0 +1,29 @@
+name: Deploy - Develop
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - develop
+
+jobs:
+  develop:
+    uses: empresa-a/github-actions-templates/.github/workflows/tpl-maven-deploy.yml@main
+    with:
+      branch: "develop"
+      stage: "dev"
+      java_version: "11"
+      resource-group: "rg-servicecanal-desa"
+      cluster-name: "aksServiceCanal-Desa"
+      namespace: "bff"
+    secrets:
+      PAT: ${{ secrets.PAT }}
+      BACKEND_ARTIFACTS_USERNAME: ${{ secrets.BACKEND_ARTIFACTS_USERNAME }}
+      BACKEND_ARTIFACTS_PASSWORD: ${{ secrets.BACKEND_ARTIFACTS_PASSWORD }}
+      ACR_SERVER: ${{ secrets.LAYER_DEV_ACR_SERVER }}
+      ACR_USERNAME: ${{ secrets.LAYER_DEV_ACR_USERNAME }}
+      ACR_PASSWORD: ${{ secrets.LAYER_DEV_ACR_PASSWORD }}
+      AZURE_CLIENT_ID: ${{ secrets.DEV_AZURE_CLIENT_ID }}
+      AZURE_CLIENT_SECRET: ${{ secrets.DEV_AZURE_CLIENT_SECRET }}
+      AZURE_SUBSCRIPTION_ID: ${{ secrets.DEV_AZURE_SUBSCRIPTION_ID }}
+      AZURE_TENANT_ID: ${{ secrets.DEV_AZURE_TENANT_ID }}

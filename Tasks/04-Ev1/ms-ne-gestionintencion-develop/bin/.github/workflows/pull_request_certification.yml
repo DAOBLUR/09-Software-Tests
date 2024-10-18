@@ -1,0 +1,19 @@
+name: Pull Request - Certification
+
+on:
+  pull_request:
+    branches:
+      - release
+
+jobs:
+  develop:
+    uses: "empresa-a/github-actions-templates/.github/workflows/tpl-maven.yml@main"
+    with:
+      java_version: "11"
+    secrets:
+      BACKEND_ARTIFACTS_USERNAME: ${{ secrets.BACKEND_ARTIFACTS_USERNAME }}
+      BACKEND_ARTIFACTS_PASSWORD: ${{ secrets.BACKEND_ARTIFACTS_PASSWORD }}
+      POLARIS_SERVER_URL: ${{ secrets.POLARIS_SERVER_URL }}
+      POLARIS_ACCESS_TOKEN: ${{ secrets.POLARIS_ACCESS_TOKEN }}
+      BLACKDUCK_URL: ${{ secrets.BLACKDUCK_URL }}
+      BLACKDUCK_TOKEN: ${{ secrets.BLACKDUCK_TOKEN }}

@@ -1,0 +1,7 @@
+str1,str2,expected
+null,*,0
+"",*,0
+"abba", 0, 0
+"abba",a, 2
+"abba",b, 2
+"abba",x, 0

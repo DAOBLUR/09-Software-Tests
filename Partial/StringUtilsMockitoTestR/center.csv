@@ -1,0 +1,7 @@
+str,expected
+,0,
+"",4,"    "
+"ab", -1,"ab"
+"ab", 4," ab "
+"abcd", 2,"abcd"
+"a", 4," a  "

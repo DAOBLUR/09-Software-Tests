@@ -1,0 +1,853 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Api Documentation",
+    "description": "Api Documentation",
+    "termsOfService": "urn:tos",
+    "contact": {},
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "__ingress-url-canal__/ms-ne-gestionIntencion",
+      "description": "Inferred Url"
+    }
+  ],
+  "tags": [
+    {
+      "name": "basic-error-controller",
+      "description": "Basic Error Controller"
+    },
+    {
+      "name": "intenciones-controller",
+      "description": "Intenciones Controller"
+    }
+  ],
+  "paths": {
+    "/error": {
+      "get": {
+        "tags": [
+          "basic-error-controller"
+        ],
+        "summary": "error",
+        "operationId": "errorUsingGET",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "basic-error-controller"
+        ],
+        "summary": "error",
+        "operationId": "errorUsingPUT",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "basic-error-controller"
+        ],
+        "summary": "error",
+        "operationId": "errorUsingPOST",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "basic-error-controller"
+        ],
+        "summary": "error",
+        "operationId": "errorUsingDELETE",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "options": {
+        "tags": [
+          "basic-error-controller"
+        ],
+        "summary": "error",
+        "operationId": "errorUsingOPTIONS",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "head": {
+        "tags": [
+          "basic-error-controller"
+        ],
+        "summary": "error",
+        "operationId": "errorUsingHEAD",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "basic-error-controller"
+        ],
+        "summary": "error",
+        "operationId": "errorUsingPATCH",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "trace": {
+        "tags": [
+          "basic-error-controller"
+        ],
+        "summary": "error",
+        "operationId": "errorUsingTRACE",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/v1/intenciones": {
+      "get": {
+        "tags": [
+          "intenciones-controller"
+        ],
+        "summary": "listado",
+        "operationId": "listadoUsingGET_1",
+        "parameters": [
+          {
+            "name": "instrumento",
+            "in": "query",
+            "required": false,
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "intencionRevisado",
+            "in": "query",
+            "required": false,
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "nombreCompleto",
+            "in": "query",
+            "required": false,
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "tipoOperacion",
+            "in": "query",
+            "required": false,
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "tipoUsuario",
+            "in": "query",
+            "required": false,
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "usuarioId",
+            "in": "query",
+            "required": false,
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ListarIntenciones"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "intenciones-controller"
+        ],
+        "summary": "actualizarIntenciones",
+        "operationId": "actualizarIntencionesUsingPUT",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IntencionesUpdDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Response"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "intenciones-controller"
+        ],
+        "summary": "registroIntenciones",
+        "operationId": "registroIntencionesUsingPOST",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IntencionesDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Response"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/v1/intenciones/home": {
+      "get": {
+        "tags": [
+          "intenciones-controller"
+        ],
+        "summary": "listado",
+        "operationId": "listadoUsingGET",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/v1/intenciones/revisado": {
+      "put": {
+        "tags": [
+          "intenciones-controller"
+        ],
+        "summary": "actualizarRevisadoIntenciones",
+        "operationId": "actualizarRevisadoIntencionesUsingPUT",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IntencioneRevDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Response"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/v1/intenciones/{intencionId}": {
+      "delete": {
+        "tags": [
+          "intenciones-controller"
+        ],
+        "summary": "eliminarIntenciones",
+        "operationId": "eliminarIntencionesUsingDELETE",
+        "parameters": [
+          {
+            "name": "intencionId",
+            "in": "path",
+            "description": "intencionId",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Response"
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "IntencioneRevDto": {
+        "title": "IntencioneRevDto",
+        "type": "object",
+        "properties": {
+          "comentario": {
+            "type": "string"
+          },
+          "intencionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "revisado": {
+            "type": "string"
+          }
+        }
+      },
+      "IntencionesDto": {
+        "title": "IntencionesDto",
+        "required": [
+          "instrumentoId",
+          "inteInstrumento",
+          "intencionCantidad",
+          "intencionComentario",
+          "intencionContraparte",
+          "tipoOperacion",
+          "usuarioId"
+        ],
+        "type": "object",
+        "properties": {
+          "instrumentoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "inteInstrumento": {
+            "type": "string"
+          },
+          "intencionCantidad": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "intencionComentario": {
+            "type": "string"
+          },
+          "intencionContraparte": {
+            "type": "string"
+          },
+          "tipoOperacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "IntencionesHome": {
+        "title": "IntencionesHome",
+        "type": "object",
+        "properties": {
+          "intencionCantidad": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "intencionComentario": {
+            "type": "string"
+          },
+          "intencionContraparte": {
+            "type": "string"
+          },
+          "intencionFecRegistro": {
+            "type": "string",
+            "format": "date"
+          },
+          "intencionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "intencionInstrumento": {
+            "type": "string"
+          },
+          "intencionRevisado": {
+            "type": "string"
+          },
+          "intencionRevisadoComentario": {
+            "type": "string"
+          },
+          "intencionTipoOperacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "intrumentoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombreOperacion": {
+            "type": "string"
+          },
+          "personaNombres": {
+            "type": "string"
+          },
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "IntencionesUpdDto": {
+        "title": "IntencionesUpdDto",
+        "type": "object",
+        "properties": {
+          "inteInstrumento": {
+            "type": "string"
+          },
+          "intecionCantidad": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "intencionComentario": {
+            "type": "string"
+          },
+          "intencionContraparte": {
+            "type": "string"
+          },
+          "intencionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tipoOperacion": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "ListarIntenciones": {
+        "title": "ListarIntenciones",
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IntencionesHome"
+            }
+          },
+          "message": {
+            "type": "string"
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "ModelAndView": {
+        "title": "ModelAndView",
+        "type": "object",
+        "properties": {
+          "empty": {
+            "type": "boolean"
+          },
+          "model": {
+            "type": "object"
+          },
+          "modelMap": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object"
+            }
+          },
+          "reference": {
+            "type": "boolean"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "ACCEPTED",
+              "ALREADY_REPORTED",
+              "BAD_GATEWAY",
+              "BAD_REQUEST",
+              "BANDWIDTH_LIMIT_EXCEEDED",
+              "CHECKPOINT",
+              "CONFLICT",
+              "CONTINUE",
+              "CREATED",
+              "DESTINATION_LOCKED",
+              "EXPECTATION_FAILED",
+              "FAILED_DEPENDENCY",
+              "FORBIDDEN",
+              "FOUND",
+              "GATEWAY_TIMEOUT",
+              "GONE",
+              "HTTP_VERSION_NOT_SUPPORTED",
+              "IM_USED",
+              "INSUFFICIENT_SPACE_ON_RESOURCE",
+              "INSUFFICIENT_STORAGE",
+              "INTERNAL_SERVER_ERROR",
+              "I_AM_A_TEAPOT",
+              "LENGTH_REQUIRED",
+              "LOCKED",
+              "LOOP_DETECTED",
+              "METHOD_FAILURE",
+              "METHOD_NOT_ALLOWED",
+              "MOVED_PERMANENTLY",
+              "MOVED_TEMPORARILY",
+              "MULTIPLE_CHOICES",
+              "MULTI_STATUS",
+              "NETWORK_AUTHENTICATION_REQUIRED",
+              "NON_AUTHORITATIVE_INFORMATION",
+              "NOT_ACCEPTABLE",
+              "NOT_EXTENDED",
+              "NOT_FOUND",
+              "NOT_IMPLEMENTED",
+              "NOT_MODIFIED",
+              "NO_CONTENT",
+              "OK",
+              "PARTIAL_CONTENT",
+              "PAYLOAD_TOO_LARGE",
+              "PAYMENT_REQUIRED",
+              "PERMANENT_REDIRECT",
+              "PRECONDITION_FAILED",
+              "PRECONDITION_REQUIRED",
+              "PROCESSING",
+              "PROXY_AUTHENTICATION_REQUIRED",
+              "REQUESTED_RANGE_NOT_SATISFIABLE",
+              "REQUEST_ENTITY_TOO_LARGE",
+              "REQUEST_HEADER_FIELDS_TOO_LARGE",
+              "REQUEST_TIMEOUT",
+              "REQUEST_URI_TOO_LONG",
+              "RESET_CONTENT",
+              "SEE_OTHER",
+              "SERVICE_UNAVAILABLE",
+              "SWITCHING_PROTOCOLS",
+              "TEMPORARY_REDIRECT",
+              "TOO_EARLY",
+              "TOO_MANY_REQUESTS",
+              "UNAUTHORIZED",
+              "UNAVAILABLE_FOR_LEGAL_REASONS",
+              "UNPROCESSABLE_ENTITY",
+              "UNSUPPORTED_MEDIA_TYPE",
+              "UPGRADE_REQUIRED",
+              "URI_TOO_LONG",
+              "USE_PROXY",
+              "VARIANT_ALSO_NEGOTIATES"
+            ]
+          },
+          "view": {
+            "$ref": "#/components/schemas/View"
+          },
+          "viewName": {
+            "type": "string"
+          }
+        }
+      },
+      "Response": {
+        "title": "Response",
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "object"
+          },
+          "message": {
+            "type": "string"
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "View": {
+        "title": "View",
+        "type": "object",
+        "properties": {
+          "contentType": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

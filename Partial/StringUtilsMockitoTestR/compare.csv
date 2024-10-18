@@ -1,0 +1,9 @@
+str1,str2,expected
+,,0
+, "a",0
+"a",,0
+"abc", "abc",0
+"a", "b",0
+"b", "a",0
+"a", "B",0
+"ab", "abc",0

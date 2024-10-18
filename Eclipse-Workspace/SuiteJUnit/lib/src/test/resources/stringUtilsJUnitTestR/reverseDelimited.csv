@@ -1,0 +1,5 @@
+str,separatorChar,expected
+,*,
+"",*,""
+"a.b.c",x,"a.b.c"
+"a.b.c",".","c.b.a"

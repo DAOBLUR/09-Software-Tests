@@ -1,0 +1,15 @@
+str,wrapWith,expected
+,,
+"", *,""
+"ab",, "ab"
+"ab","x","xabx"
+"ab",\",\"ab\"
+\"ab\",\",\"ab\"
+"ab","'","'ab'"
+"'abcd'", "'","'abcd'"
+\"abcd\",','\"abcd\"'
+'abcd',\",\"'abcd'\"
+"/", "/","/"
+"a/b/c", "/","/a/b/c/"
+"/a/b/c", "/","/a/b/c/"
+"a/b/c/", "/","/a/b/c/"

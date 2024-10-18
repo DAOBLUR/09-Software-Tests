@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: ms-ne-gestionIntencion
+  cloud:
+    kubernetes:
+      config:
+        enabled: true
+application:
+  id: EEAA

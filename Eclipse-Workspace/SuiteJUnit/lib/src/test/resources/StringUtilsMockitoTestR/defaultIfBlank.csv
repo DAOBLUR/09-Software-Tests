@@ -1,0 +1,6 @@
+str,defaultStr,expected
+, "",""
+"", "",""
+" ", "",""
+"bat", "","bat"
+"",,

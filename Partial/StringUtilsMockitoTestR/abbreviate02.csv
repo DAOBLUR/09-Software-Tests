@@ -1,0 +1,12 @@
+str,offset,maxWidth,expected
+, 0, 0,
+"", 0, 4,""
+"abcdefghijklmno", -1, 10,"abcdefg..."
+"abcdefghijklmno",0,10,"abcdefg..."
+"abcdefghijklmno",1,10,"abcdefg..."
+"abcdefghijklmno",4,10,"abcdefg..."
+"abcdefghijklmno",5,10,"...fghi..."
+"abcdefghijklmno",6,10,"...ghij..."
+"abcdefghijklmno",8,10,"...ijklmno"
+"abcdefghijklmno",10,10,"...ijklmno"
+"abcdefghijklmno",12,10,"...ijklmno"

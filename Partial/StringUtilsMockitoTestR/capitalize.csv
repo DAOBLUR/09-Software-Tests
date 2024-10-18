@@ -1,0 +1,6 @@
+str,expected
+,
+"",""
+"cat","Cat"
+"cAt","CAt"
+"'cat'","'cat'"

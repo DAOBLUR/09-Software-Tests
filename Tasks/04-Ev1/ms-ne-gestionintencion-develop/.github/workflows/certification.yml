@@ -1,0 +1,39 @@
+name: Deploy - Certification
+
+on:
+  workflow_dispatch:
+
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    outputs:
+      teams: ${{ steps.actorTeams.outputs.teams }}
+    steps:
+      - name: Get Teams from the Actor
+        uses: tspascoal/get-user-teams-membership@v3
+        id: actorTeams
+        with:
+          username: ${{ github.actor }}
+          GITHUB_TOKEN: ${{ secrets.PAT }}
+  release:
+    needs: validation
+    if: github.ref == 'refs/heads/release' && (contains(needs.validation.outputs.teams, 'grp-github-emu-admins') || contains(needs.validation.outputs.teams, 'gh-chapter-devops-users') || contains(needs.validation.outputs.teams, 'gh-chapter-approvepr-be-users'))
+    uses: empresa-a/github-actions-templates/.github/workflows/tpl-maven-deploy.yml@main
+    with:
+      branch: "release"
+      stage: "cer"
+      java_version: "11"
+      resource-group: "rg-servicecanal-cert"
+      cluster-name: "aksServiceCanal-Cert"
+      namespace: "bff"
+    secrets:
+      PAT: ${{ secrets.PAT }}
+      BACKEND_ARTIFACTS_USERNAME: ${{ secrets.BACKEND_ARTIFACTS_USERNAME }}
+      BACKEND_ARTIFACTS_PASSWORD: ${{ secrets.BACKEND_ARTIFACTS_PASSWORD }}
+      ACR_SERVER: ${{ secrets.LAYER_CERT_ACR_SERVER }}
+      ACR_USERNAME: ${{ secrets.LAYER_CERT_ACR_USERNAME }}
+      ACR_PASSWORD: ${{ secrets.LAYER_CERT_ACR_PASSWORD }}
+      AZURE_CLIENT_ID: ${{ secrets.CERT_AZURE_CLIENT_ID }}
+      AZURE_CLIENT_SECRET: ${{ secrets.CERT_AZURE_CLIENT_SECRET }}
+      AZURE_SUBSCRIPTION_ID: ${{ secrets.CERT_AZURE_SUBSCRIPTION_ID }}
+      AZURE_TENANT_ID: ${{ secrets.CERT_AZURE_TENANT_ID }}

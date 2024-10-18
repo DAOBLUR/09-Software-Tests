@@ -1,0 +1,7 @@
+seq,searchSeq,expected
+, *,false
+*,,false
+"", "",true
+"abc", "",true
+"abc", "a",true
+"abc", "z",false

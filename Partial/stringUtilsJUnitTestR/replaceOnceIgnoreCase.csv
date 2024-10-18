@@ -1,0 +1,10 @@
+text,searchString,replacement,expected
+, *, *,
+"", *, *,""
+"any", , *,"any"
+"any",*,,"any"
+"any", "", *,"any"
+"aba", "a",,"aba"
+"aba", "a", "","ba"
+"aba", "a", "z","zba"
+"FoOFoofoo", "foo", "","Foofoo"

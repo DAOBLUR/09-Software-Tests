@@ -1,0 +1,12 @@
+str,expected
+,
+"",""
+"abc \r","abc "
+"abc\n","abc"
+"abc\r\n","abc"
+"abc","ab"
+"abc\nabc","abc\nab"
+"a",""
+"\r",""
+"\n",""
+"\r\n",""

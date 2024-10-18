@@ -1,0 +1,10 @@
+str,shift,expected
+,-99999,
+"",99999,""
+"abcdefg",0,"abcdefg"
+"abcdefg",2,"fgabcde"
+"abcdefg",-2,"cdefgab"
+"abcdefg",7,"abcdefg"
+"abcdefg",-7,"abcdefg"
+"abcdefg",9,"fgabcde"
+"abcdefg",-9,"cdefgab"

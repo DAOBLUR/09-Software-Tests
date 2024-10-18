@@ -1,0 +1,4 @@
+bytes,charsetName,expected
+,"",""
+"","",""
+"bat","","bat"

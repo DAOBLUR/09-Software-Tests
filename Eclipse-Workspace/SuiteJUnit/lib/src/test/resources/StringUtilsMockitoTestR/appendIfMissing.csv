@@ -1,0 +1,11 @@
+str,suffix,suffixes,expected
+,,, 
+"abc",,,"abc"
+"", "xyz",,"xyz"
+"abc", "xyz","","abcxyz"
+"abc", "xyz", "", "abc"
+"abc", "xyz", "mno","abcxyz"
+"abcxyz", "xyz", "mno","abcxyz"
+"abcmno", "xyz", "mno","abcmno"
+"abcXYZ", "xyz", "mno","abcXYZxyz"
+"abcMNO", "xyz", "mno","abcMNOxyz"

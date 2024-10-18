@@ -1,0 +1,10 @@
+str1,str2,expected
+,,,
+"","",""
+"","abc","abc"
+"abc","",""
+"abc","abc",""
+"abc","ab",""
+"ab","abxyz","xyz"
+"abcde","abxyz","xyz"
+"abcde","xyz","xyz"

@@ -1,0 +1,15 @@
+str,abbrevMarker,offset,maxWidth,expected
+,,0,0,
+"abcdefghijklmno",,0,0,"abcdefghijklmno"
+"","...",0,4,""
+"abcdefghijklmno","---",-1, 10,"abcdefg---"
+"abcdefghijklmno",",", 0, 10,"abcdefghi,"
+"abcdefghijklmno",",",1,10,"abcdefghi,"
+"abcdefghijklmno",",",2, 10,"abcdefghi,"
+"abcdefghijklmno","::", 4,10,"::efghij::"
+"abcdefghijklmno","...", 6, 10,"...ghij..."
+"abcdefghijklmno","*", 9, 10,"*ghijklmno"
+"abcdefghijklmno","'", 10, 10,"'ghijklmno"
+"abcdefghijklmno","!", 12, 10,"!ghijklmno"
+"abcdefghij","abra",0,4,IllegalArgumentException
+"abcdefghij","...",5,6,IllegalArgumentException

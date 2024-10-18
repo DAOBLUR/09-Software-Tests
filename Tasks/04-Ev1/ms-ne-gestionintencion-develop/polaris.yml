@@ -1,0 +1,45 @@
+version: "1"
+project:
+  name: ${scm.git.repo}
+  branch: ${scm.git.branch}
+  revision:
+    name: ${scm.git.commit}
+    date: ${scm.git.commit.date}
+  groups:
+    GRP_DMENTES_ADMIN: Administrator
+    GRP_DMENTES_CONTRIBUTOR: Contributor
+    GRP_DMENTES_READER: Observer
+capture:
+  build:
+    cleanCommands:
+      - shell: [mvn, -B, -f, pom.xml, clean]
+    buildCommands:
+      - shell: [mvn, -B, -f, pom.xml, install, -DskipTests, -Dmaven.javadoc.skip=true, -Djacoco.skip=true]
+    coverity:
+      skipFiles:
+        - "@java:(^|[/\\\\])src[/\\\\]test[/\\\\]"
+      #- "(^|[/\\\\])devops[/\\\\]"
+  fileSystem:
+    ears:
+      extensions: [ear]
+      files:
+        - directory: ${project.projectDir}
+    java:
+      files:
+        - directory: ${project.projectDir}
+        - excludeRegex: "(^|[/\\\\])src[/\\\\]test[/\\\\]"
+      #- excludeRegex: "(^|[/\\\\])devops[/\\\\]"
+    wars:
+      extensions: [war]
+      files:
+        - directory: ${project.projectDir}
+  coverity:
+    cov-security-da: enable
+analyze:
+  mode: central
+  coverity:
+    cov-analyze: [--all, --webapp-security]
+install:
+  coverity:
+    version: default
+serverUrl: https://aempresa.polaris.synopsys.com

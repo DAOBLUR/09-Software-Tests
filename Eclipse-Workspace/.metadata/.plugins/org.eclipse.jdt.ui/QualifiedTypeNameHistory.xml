@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeEach"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+    <fullyQualifiedTypeName name="utest.evidencia2.clases.CircleLinkedList"/>
+    <fullyQualifiedTypeName name="utest.evidencia2.tests.DynamicArrayTest"/>
+    <fullyQualifiedTypeName name="utest.evidencia2.clases.DynamicArray"/>
+    <fullyQualifiedTypeName name="org.apache.commons.math3.util.OpenIntToDoubleHashMap.Iterator"/>
+    <fullyQualifiedTypeName name="java.lang.Iterable"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="utest.evidencia2.clases.BinaryTree"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.params.ParameterizedTest"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.params.provider.CsvFileSource"/>
+    <fullyQualifiedTypeName name="org.apache.commons.lang3.RegExUtils"/>
+    <fullyQualifiedTypeName name="org.apache.commons.lang3.ArrayUtils"/>
+    <fullyQualifiedTypeName name="com.google.common.base.Suppliers"/>
+    <fullyQualifiedTypeName name="org.apache.commons.lang3.ObjectUtils"/>
+    <fullyQualifiedTypeName name="org.apache.commons.lang3.CharUtils"/>
+    <fullyQualifiedTypeName name="org.apache.commons.codec.Charsets"/>
+    <fullyQualifiedTypeName name="org.apache.commons.codec.binary.CharSequenceUtils"/>
+    <fullyQualifiedTypeName name="org.apache.commons.lang3.CharSequenceUtils"/>
+    <fullyQualifiedTypeName name="java.util.Spliterators"/>
+    <fullyQualifiedTypeName name="java.util.Spliterator"/>
+    <fullyQualifiedTypeName name="java.util.stream.StreamSupport"/>
+    <fullyQualifiedTypeName name="partialPractice.StringUtils"/>
+    <fullyQualifiedTypeName name="org.mockito.Mock"/>
+    <fullyQualifiedTypeName name="org.mockito.Mockito"/>
+    <fullyQualifiedTypeName name="java.lang.CharSequence"/>
 </qualifiedTypeNameHistroy>
